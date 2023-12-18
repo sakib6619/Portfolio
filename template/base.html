@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} base {% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'CSS/base.css' %}"> {% endblock css %}
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo">Porfolio</div>
+                <div>
+                    <nav class="navigation">
+                        <ul class="nav" style="display: inline-flex;">
+                            <li><a href="/" class="active">Home</a></li>
+                            <li><a href="/">About</a></li>
+                            <div>
+                                <ul href="/">Service</ul>
+                            </div>
+                            <li><a href="/">Projects</a></li>
+                            <li><a href="/">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock%}
+    <footer>
+        Copyright 2022-2023 by <bold>Sakib</bold> All Rights Reserved.
+    </footer>
+</body>
+
+</html>

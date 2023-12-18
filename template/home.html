@@ -1,0 +1,119 @@
+<!-- this is home page -->
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'CSS/base.css' %}"> {% endblock css %}
+{% block content%}
+<!-- Bennar section -->
+<section>
+    <div class="container">
+        <div class="bennar">
+            <div class="benarText">
+                <h3>Hey! It's Me</h3>
+                <h1>Shahadot hossain Sakib</h1>
+                <h3>And I'm <span style="color:red"> Full Stack Web Devoloper</span></h3>
+                <div class="socialMedia">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <button>Dawonload CV</button>
+            </div>
+            <div class="bennarImg">
+                <img src="/static/media/img/skdp.png" alt="profile frame">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About section -->
+<section class="aboutSection">
+    <div class="container">
+        <h1 class="headingItem">About</h1>
+        <div class="bennar">
+            <div class="bennarImg">
+                <img src="/static/media/img/skdp.png" class="aboutPhoto" alt="Photo">
+            </div>
+            <div class="benarText">
+                <h3>about Me,</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Expedita odio sapiente voluptate vel debitis modi dolore rem quod?<br>
+                    Corporis nisi dignissimos atque iure explicabo laboriosam dolores quod,<br>
+                    eveniet voluptatem officia!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Service section -->
+<section>
+    <div class="container">
+        <h3 class="headingItem">Service</h3>
+        <div class="service">
+            <div class="col-1">
+                <i class="fa-solid fa-code"></i>
+                <h5>Web Design</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Obcaecati voluptatem,</p>
+            </div>
+            <div class="col-1">
+                <i class="fa-solid fa-code"></i>
+                <h5>Web Devolopment</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Obcaecati voluptatem,</p>
+            </div>
+            <div class="col-1">
+                <i class="fa-solid fa-code"></i>
+                <h5>Digital marketing</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Obcaecati voluptatem,</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- portfolio section -->
+<section>
+    <div class="container">
+        <h1 class="headingItem">Resent Work</h1>
+        <div class="service">
+            <div class="col-1">
+                <img src="/static/media/img/Screenshot1.png" alt="fris project">
+                <h5>Web Design</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Obcaecati voluptatem,</p>
+            </div>
+            <div class="col-1">
+                <img src="/static/media/img/Screenshot2.png" alt="scand project">
+                <h5>Web Devolopment</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Obcaecati voluptatem,</p>
+            </div>
+            <div class="col-1">
+                <img src="/static/media/img/Screenshot3.png" alt="thard project">
+                <h5>Digital marketing</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Obcaecati voluptatem,</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact section -->
+<section>
+    <div class="container">
+        <h1 class="headingItem">Contact Me</h1>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </div>
+</section>
+{% endblock %}
